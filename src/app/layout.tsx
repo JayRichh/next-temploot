@@ -24,8 +24,15 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://next-temploot.vercel.app"),
   title: "Next.js Template",
   description: "Minimal Next.js template with TypeScript, Tailwind, and Framer Motion",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Next.js Template",
+    description: "Minimal Next.js template with TypeScript, Tailwind, and Framer Motion",
+    url: "/",
+  },
 };
 
 function NavigationLoading() {
